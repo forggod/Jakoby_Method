@@ -8,6 +8,8 @@ n = int(input('Введите размер матрицы: '))
 matrix = []
 [matrix.append([(random.randint(1, 10)) for j in range(n)]) for i in range(n)]
 x = [random.randint(1, 10) for i in range(n)]
+for i in range(n):
+    matrix[i][i] *= 1000
 
 #   Ищем приесоединённый вектор
 n = len(matrix)
